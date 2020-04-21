@@ -1,0 +1,27 @@
+{
+  "name": "exampleapp",
+  "version": "1.0.0",
+  "description": "Sample Node.js application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "error-handler": "^1.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.7.6",
+    "json": "^9.0.6",
+    "logger": "0.0.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.5.6",
+    "routes": "^2.1.0",
+    "serve-favicon": "^2.5.0",
+    "url": "^0.11.0"
+  }
+}

@@ -8,13 +8,13 @@ router.get('/', (req, res, next) => {
 });
 
 // Resgister 
-router.get('/Register', (req, res, next) => {
+router.post('/Register', (req, res, next) => {
     res.send("You are in the user registration page");
     next();
 });
 
 // Authenticate
-router.get('/authenticate', (req, res, next)=>{
+router.post('/authenticate', (req, res, next)=>{
     res.send("Authenticate");
 });
 
@@ -22,6 +22,7 @@ router.get('/authenticate', (req, res, next)=>{
 router.get('/profile', (req, res, next) => {
     res.send("profile")
 });
+
 
 router.get('/db' , async (req,res,next) => {
     try{

@@ -48,8 +48,8 @@ app.use(cors());
 app.use(express.static(pathModule.join(__dirname, 'public')));
 
 //routes
-app.use('/root' , async (req,res,next) => {
- 
+app.use('/' , async (req,res,next) => {
+ res.send("In Root Directory");
 });
 
 //Mongo Clinet configure
@@ -63,6 +63,7 @@ mongoClient.connect(DB_CONNECTION_URL, (err,db)=>{
     console.log("Connection Successfully established");
   }
 });
+
 
 //App Start
 app.listen(3000, (err, response)=>{
